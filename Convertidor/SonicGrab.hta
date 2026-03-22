@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Sonic Grab 2026</title>
+
+    <!-- HTA Config -->
+    <hta:application 
+        id="ytdlApp"
+        border="thin"
+        scroll="no"
+        maximizebutton="yes"
+        windowstate="normal">
+
+    <!-- Vincular CSS externo -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Vincular VBSCRIPT externo -->
+    <script language="VBScript" src="script.vbs"></script>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header-bar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="title-container">
+            <h2>Sonic Grab</h2>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <label>PEGAR ENLACE AQUI:</label>
+        <input type="text" id="urlInput" placeholder="URL de Youtube...">
+
+        <label>ELEGIR FORMATO:</label>
+        <select id="formatSelect">
+            <option value="mp3">MUSICA (MP3)</option>
+            <option value="mp4">VIDEO (MP4)</option>
+        </select>
+
+        <div class="folder-section">
+            <label>DONDE GUARDAR:</label>
+            <input type="text" id="folderInput" readonly placeholder="Carpeta no seleccionada">
+            <br>
+            <button class="btn-browse" onclick="SeleccionarCarpeta()">SELECCIONAR CARPETA</button>
+        </div>
+
+        <div id="status">LISTO</div>
+
+        <button id="btnMain" class="btn-main" onclick="Descargar()">
+            DESCARGAR AHORA
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

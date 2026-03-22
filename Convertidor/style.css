@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e9ecef;
+    padding: 20px;
+    margin: 0;	
+    overflow-y: auto;   /* solo scroll vertical */
+    overflow-x: hidden; /* evita scroll horizontal */}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    max-width: 650px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 20px;
+    color: white;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bar img {
+    max-height: 70px;
+    width: auto;
+}
+
+.header-bar h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 900;
+    color: #28a745;
+    letter-spacing: -1px;
+}
+
+.content {
+    padding: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+
+.folder-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-browse {
+    background: #343a40;
+    color: white;
+    border: none;
+    padding: 0 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 65px;
+    margin-top: 10px;
+}
+
+#status {
+    text-align: center;
+    font-weight: 900;
+    margin: 20px 0;
+    min-height: 35px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.btn-main {
+    width: 100%;
+    height: 95px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 900;
+    border-radius: 20px;
+    box-shadow: 0 6px 0 #1e7e34;
+}
+
+.btn-main:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.btn-main:disabled {
+    background: #ccc;
+    box-shadow: none;
+}
